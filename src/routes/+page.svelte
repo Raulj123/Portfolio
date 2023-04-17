@@ -1,7 +1,7 @@
 <script lang="ts">
 import { AppBar} from "@skeletonlabs/skeleton";
 import type { navLink, projects } from "../app";
-	
+
 
 
 let navInfo : navLink[] = [
@@ -16,14 +16,16 @@ let navInfo : navLink[] = [
 	},
 	{
 	title:"Experience",
-	href: "Experience",
+	href: "#experience",
 	},
 	{
-		title: "Contact",
-		href:"Contact",
+	title: "Contact",
+	href:"Contact",
 	}
 	
 ];
+
+export { navInfo };
 
 let projectDetail : projects[] = [
 	{
@@ -101,7 +103,15 @@ let projectDetail : projects[] = [
 	</div>
 	</section>
 	
+	<hr>
+	<section id="experience">
+		<h1 class="text-center p-20"style=" font-weight: bold;">Experience</h1>
 
+
+
+
+
+	</section>
 	
 
 

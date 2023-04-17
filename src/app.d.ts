@@ -11,3 +11,10 @@ export interface navLink{
 	title:string
 	href:string 
 }
+
+export interface projects{
+	href:string
+	image:string
+	title:string
+	content:string
+}

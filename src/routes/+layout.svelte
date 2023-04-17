@@ -11,9 +11,15 @@
 	<LightSwitch class="ml-9 mt-4"></LightSwitch>
 		
 	<slot />
+	<!-- <footer class="text-center py-5">Made with 💙 by Raul</footer> -->
 </AppShell>
 
+<style>
+	.LightSwitch + a {
+  color: inherit;
+}
 
+</style>
 
 
 

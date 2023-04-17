@@ -5,7 +5,8 @@
 	import '@skeletonlabs/skeleton/styles/all.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
-	import {AppBar, AppShell, LightSwitch} from "@skeletonlabs/skeleton";
+	import '@fortawesome/fontawesome-free/css/all.css';
+	import { AppShell, LightSwitch} from "@skeletonlabs/skeleton";
 </script>
 <AppShell >
 	<LightSwitch class="ml-9 mt-4"></LightSwitch>

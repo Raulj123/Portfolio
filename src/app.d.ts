@@ -20,3 +20,9 @@ export interface projects{
 	badgesPic: string[]
 	content:string
 }
+
+export interface experience {
+	title: string
+	date: string
+	content: string 
+}

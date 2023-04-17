@@ -31,7 +31,7 @@ let projectDetail : projects[] = [
 		image: "./Notess.png",
 		title: "Notess",
 		badges: ["PHP","MySQL"],
-		badgesPic: ["./PhP.png","MySql.png"],
+		badgesPic: ["./php.svg","MySql.svg"],
 		content: "Notess is a web-based note-taking application that allows users to create accounts, log in securely, and save notes. The app is designed to provide a user-friendly platform for taking and storing notes. Users can retrieve and edit their notes at any time",
 	},
 
@@ -40,16 +40,16 @@ let projectDetail : projects[] = [
 		image:"./CodeShare.png",
 		title:"CodeShare",
 		badges: ["Svelte","TypeScript"],
-		badgesPic: ["./svelte.png","./ts.png"],
+		badgesPic: ["./svelte.png","./ts.svg"],
 		content:"Code share is a web-based code snippet manager that simplifies the process of storing and organizing code snippets. Users can add a title, programming language, and code snippet, which are displayed in a easy-to-read format using the Skeleton UI framework. The application allows users to delete unwanted code snippets or mark important ones as favorites.",
 	},
 	{
-		href:"https://github.com/Raulj123/CodeSnippet",
-		image:"./CodeShare.png",
-		title:"filler",
-		badges: ["PHP","MySQL"],
-		badgesPic: ["sad"],
-		content:"teststasd"
+		href:"https://github.com/Raulj123/c-vis",
+		image:"./vis.png",
+		title:"C++ visualizer",
+		badges: ["C++","SDL"],
+		badgesPic: ["./c.svg","SDL.svg"],
+		content:"Program that implements a visualization of various sorting algorithms. The user is prompted to select a sorting algorithm and the program generates a vector of 100 random integers. The chosen sorting algorithm is then applied to the vector, and at each step of the algorithm, the program visually displays the current state of the vector as a series of vertical lines on a window."
 	}
 
 
@@ -89,7 +89,7 @@ let projectDetail : projects[] = [
 			<h3 class="text-left p-2" style=" font-weight: bold;">{projects.title}</h3>
 			{#each projects.badges as badge,i}
 			<span class="badge variant-filled ml-3 ">{badge}
-			<img class="text-center u-max-full-width centered-img h-5 w-5 p-1" src={projects.badgesPic[i]} alt={badge}>
+			<img class="text-center u-max-full-width centered-img h-5 w-5 p-1" style="background-color: transparent;"src={projects.badgesPic[i]} alt={badge}>
 			</span>
 			{/each}
 			

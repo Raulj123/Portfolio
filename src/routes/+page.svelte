@@ -1,6 +1,7 @@
 <script lang="ts">
 import { AppBar} from "@skeletonlabs/skeleton";
 import type { navLink, projects } from "../app";
+	
 
 
 let navInfo : navLink[] = [
@@ -29,6 +30,8 @@ let projectDetail : projects[] = [
 		href:"https://github.com/Raulj123/Notess",
 		image: "./Notess.png",
 		title: "Notess",
+		badges: ["PHP","MySQL"],
+		badgesPic: ["./PhP.png","MySql.png"],
 		content: "Notess is a web-based note-taking application that allows users to create accounts, log in securely, and save notes. The app is designed to provide a user-friendly platform for taking and storing notes. Users can retrieve and edit their notes at any time",
 	},
 
@@ -36,12 +39,16 @@ let projectDetail : projects[] = [
 		href:"https://github.com/Raulj123/CodeSnippet",
 		image:"./CodeShare.png",
 		title:"CodeShare",
+		badges: ["Svelte","TypeScript"],
+		badgesPic: ["./svelte.png","./ts.png"],
 		content:"Code share is a web-based code snippet manager that simplifies the process of storing and organizing code snippets. Users can add a title, programming language, and code snippet, which are displayed in a easy-to-read format using the Skeleton UI framework. The application allows users to delete unwanted code snippets or mark important ones as favorites.",
 	},
 	{
 		href:"https://github.com/Raulj123/CodeSnippet",
 		image:"./CodeShare.png",
 		title:"filler",
+		badges: ["PHP","MySQL"],
+		badgesPic: ["sad"],
 		content:"teststasd"
 	}
 
@@ -80,7 +87,13 @@ let projectDetail : projects[] = [
 			<img class="text-center centered-img h-50 w-90" style="border-radius-bottom:9px;"src={projects.image} alt="Notess web screenshot">
 		</a>
 			<h3 class="text-left p-2" style=" font-weight: bold;">{projects.title}</h3>
-			<p class="text-center">{projects.content}</p>
+			{#each projects.badges as badge,i}
+			<span class="badge variant-filled ml-3 ">{badge}
+			<img class="text-center u-max-full-width centered-img h-5 w-5 p-1" src={projects.badgesPic[i]} alt={badge}>
+			</span>
+			{/each}
+			
+			<p class="text-center py-3">{projects.content}</p>
 		
 		</div>
 

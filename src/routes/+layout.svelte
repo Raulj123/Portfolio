@@ -14,12 +14,8 @@
 	<!-- <footer class="text-center py-5">Made with 💙 by Raul</footer> -->
 </AppShell>
 
-<style>
-	.LightSwitch + a {
-  color: inherit;
-}
 
-</style>
+
 
 
 

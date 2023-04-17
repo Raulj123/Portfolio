@@ -16,5 +16,7 @@ export interface projects{
 	href:string
 	image:string
 	title:string
+	badges:string[]
+	badgesPic: string[]
 	content:string
 }

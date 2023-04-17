@@ -1,7 +1,6 @@
 <script lang="ts">
-import { AppBar} from "@skeletonlabs/skeleton";
+import { AppBar, Accordion, AccordionItem } from "@skeletonlabs/skeleton";
 import type { navLink, projects } from "../app";
-
 
 
 let navInfo : navLink[] = [
@@ -25,7 +24,7 @@ let navInfo : navLink[] = [
 	
 ];
 
-export { navInfo };
+
 
 let projectDetail : projects[] = [
 	{
@@ -107,7 +106,17 @@ let projectDetail : projects[] = [
 	<section id="experience">
 		<h1 class="text-center p-20"style=" font-weight: bold;">Experience</h1>
 
-
+		
+		
+		<Accordion class="card py-3 w-[65%] mx-auto rounded-md">
+			<AccordionItem open>
+				<svelte:fragment slot="lead" >
+					<i class="fa-solid fa-book text-xl w-6 text-center"/>
+				</svelte:fragment>
+				<svelte:fragment slot="summary"><p class="font-bold">Code Campus</p></svelte:fragment>
+				<svelte:fragment slot="content">blah</svelte:fragment>
+			</AccordionItem>
+		</Accordion>
 
 
 
@@ -157,7 +166,7 @@ let projectDetail : projects[] = [
 	margin-right: auto;
     }
 	.card {
-    display: block;
+    
     max-width: 320px;
     padding-top: 0px;
     margin-right:20px;
@@ -178,6 +187,9 @@ let projectDetail : projects[] = [
     justify-content: center;
   }
   
+ 
+
+
 </style>
 
 

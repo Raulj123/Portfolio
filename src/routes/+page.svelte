@@ -100,7 +100,7 @@
 	<h3 class="text-center" style=" font-weight: bold;">CSUF'24 | Aspiring Software Enginer</h3>
 	
 	<div class="logo-cloud mx-auto [&>.logo-item]:!bg-transparent grid-cols-1 lg:!grid-cols-1 gap-2.5 ">
-	<a class="logo-item" href="" target="_blank" >
+	<a class="logo-item" href="./master_resume.pdf" target="_blank" >
 		<i class="fa-solid fa-file text-2l" />
 		<span>My Resume</span>
 	</a>

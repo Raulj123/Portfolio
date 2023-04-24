@@ -86,9 +86,9 @@
 </script>
 
 {#if mobile}
-  <p>You are on a mobile device</p>
+  <p>mobile device</p>
 {:else}
-  <p>You are not on a mobile device</p>
+  <p>not on a mobile device</p>
 {/if}
 <svelte:window bind:innerWidth  />
 {#if !mobile}
@@ -104,11 +104,11 @@
 	
 </AppBar>
 {:else}
-<AppBar class= "flex justify-center text-center rounded-md w-[25%]">
+<AppBar class= "flex justify-center text-center rounded-md w-[50%]">
 	
 	<ul >
 		{#each navInfo as navLink}
-			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-11" style=" font-weight: bold;" href={navLink.href}>
+			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-5" style=" font-weight: bold;" href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}

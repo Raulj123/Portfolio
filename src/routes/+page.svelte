@@ -102,7 +102,7 @@
 {:else}
 <AppBar class= "flex justify-between items-center w-[80%] mx-auto py-6 rounded-md">
 	
-	<ul style="margin-left: 1rem;"">
+	<ul style="margin-left: 1rem;">
 		{#each navInfo as navLink}
 			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 " style=" font-weight: bold; font-size:1rem;" href={navLink.href}>
 				{navLink.title}</a

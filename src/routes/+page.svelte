@@ -102,12 +102,11 @@
 	
 </AppBar>
 {:else}
-<LightSwitch class="ml-3 mt-5"></LightSwitch>
 <div class= "flex py-4 mt-4" style="padding-left:5vw; padding-right:5vw; justify-content:space-evenly; width:auto; align-items:center; padding:2rem;">
 	
 	<ul >
 		{#each navInfo as navLink}
-			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 mr-2 " style=" font-weight: bold; font-size:1.1rem; text-decoration: none; color: #cdf0f6;" href={navLink.href}>
+			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 mr-2 " style=" font-weight: bold; font-size:1.1rem; text-decoration: none; color: #cdf0f6; " href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}

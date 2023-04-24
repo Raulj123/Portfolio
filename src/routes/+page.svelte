@@ -92,7 +92,7 @@
 	
 	<ul >
 		{#each navInfo as navLink}
-			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-11" style=" font-weight: bold;" href={navLink.href}>
+			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-11 " style=" font-weight: bold;" href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}
@@ -104,7 +104,7 @@
 	
 	<ul >
 		{#each navInfo as navLink}
-			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2" style=" font-weight: bold; font-size:1rem;" href={navLink.href}>
+			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-1 " style=" font-weight: bold; font-size:1rem;" href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}

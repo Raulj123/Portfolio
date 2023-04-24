@@ -91,27 +91,27 @@
 <LightSwitch class="ml-9 mt-5 "></LightSwitch>
 <AppBar class= "flex justify-between items-center w-[75%] mx-auto py-6 rounded-md">
 	
-	<ul style="display: inline-block;">
+	<ul>
 		{#each navInfo as navLink}
 			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-11 " style=" font-weight: bold;" href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}
 	</ul>
-
+	
 	
 </AppBar>
 {:else}
 <AppBar class= "flex justify-between items-center w-[80%] mx-auto py-6 rounded-md">
 	
-	<ul style="margin-left: 2rem; display: inline-block;">
+	<ul style="display: inline-block;">
 		{#each navInfo as navLink}
 			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 " style=" font-weight: bold; font-size:1rem;" href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}
 	</ul>
-	<ul style="margin-left: 2rem; display: inline-block; vertical-align: middle;">
+	<ul style="margin-left: 0.9rem; display: inline-block; vertical-align: middle;">
 		<LightSwitch class="ml-2"></LightSwitch>
 	</ul>
 </AppBar>

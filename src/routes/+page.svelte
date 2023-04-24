@@ -5,6 +5,10 @@
 	
 
 	$: mobile = innerWidth < 1080; 
+	$:{
+		console.log(innerWidth)
+	}
+	
 	function scrollToSection(id: string): void {
     const section = document.getElementById(id);
 	if(section){
@@ -78,14 +82,15 @@
 				'Instructed small groups of children, usually with fewer than 20 students, ranging in age from 4 to 13, on coding and STEM conceptsusing various programming languages and tools, such as Scratch Jr., Scratch, Roblox Studio, Unity, and a game development platform (GDP) exclusive to the Code Ninjas curriculum which uses JavaScript.'
 		}
 	];
-	console.log(innerWidth)
+	
 </script>
 
 
 <svelte:window bind:innerWidth  />
+{#if !mobile}
 <AppBar class= "flex justify-between items-center w-[75%] mx-auto py-6 rounded-md">
 	
-	<ul class= "notMobileNav">
+	<ul >
 		{#each navInfo as navLink}
 			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-11" style=" font-weight: bold;" href={navLink.href}>
 				{navLink.title}</a
@@ -94,6 +99,19 @@
 	</ul>
 	
 </AppBar>
+{:else}
+<AppBar class= "flex justify-center text-center rounded-md">
+	
+	<ul >
+		{#each navInfo as navLink}
+			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-11" style=" font-weight: bold;" href={navLink.href}>
+				{navLink.title}</a
+			>
+		{/each}
+	</ul>
+	
+</AppBar>
+{/if}
 
 <section id="about">
 	<h1 class="text-center p-40" style=" font-weight: bold;">Hey, I'am Raul</h1>

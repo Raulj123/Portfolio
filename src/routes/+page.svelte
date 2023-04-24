@@ -100,7 +100,7 @@
 	
 </AppBar>
 {:else}
-<AppBar class= "flex justify-center text-center rounded-md w-[75%]">
+<AppBar class= "flex justify-between  text-center mx-auto py-6 rounded-md w-[75%]">
 	
 	<ul >
 		{#each navInfo as navLink}

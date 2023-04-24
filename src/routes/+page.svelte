@@ -1,7 +1,10 @@
 <script lang="ts">
 	import { AppBar, Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import type { experience, navLink, projects } from '../app';
+	let innerWidth = 0
+	
 
+	$: mobile = innerWidth < 1080; 
 	function scrollToSection(id: string): void {
     const section = document.getElementById(id);
 	if(section){
@@ -75,17 +78,21 @@
 				'Instructed small groups of children, usually with fewer than 20 students, ranging in age from 4 to 13, on coding and STEM conceptsusing various programming languages and tools, such as Scratch Jr., Scratch, Roblox Studio, Unity, and a game development platform (GDP) exclusive to the Code Ninjas curriculum which uses JavaScript.'
 		}
 	];
+	console.log(innerWidth)
 </script>
 
 
-<AppBar class="flex justify-between items-center w-[75%] mx-auto py-6 rounded-md">
-	<ul>
+<svelte:window bind:innerWidth  />
+<AppBar class= "flex justify-between items-center w-[75%] mx-auto py-6 rounded-md">
+	
+	<ul class= "notMobileNav">
 		{#each navInfo as navLink}
 			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-11" style=" font-weight: bold;" href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}
 	</ul>
+	
 </AppBar>
 
 <section id="about">
@@ -188,6 +195,7 @@
 
 
 <style>
+
 	a {
 		font-size: 20px;
 	}

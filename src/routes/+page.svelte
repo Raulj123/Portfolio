@@ -76,7 +76,7 @@
 				'Instructed 20-25 students in programming, problem solving, and algorithm design using Minecraft Education Edition, with a 90% project completion rate. Developed and refined 10+ lesson plans and course materials tailored to meet the diverse learning needs of individual students. Conducted regular assessments of student performance, behavior, social development, and physical health, using various tools to identify areas for improvement.'
 		},
 		{
-			title: 'Code Ninjas | STEM Instructor | Fullerton, CA  Aug 2021 – Present',
+			title: 'Code Ninjas | STEM Instructor | Fullerton, CA ',
 			date: 'Aug 2021 – Present',
 			content:
 				'Instructed small groups of children, usually with fewer than 20 students, ranging in age from 4 to 13, on coding and STEM conceptsusing various programming languages and tools, such as Scratch Jr., Scratch, Roblox Studio, Unity, and a game development platform (GDP) exclusive to the Code Ninjas curriculum which uses JavaScript.'
@@ -154,7 +154,10 @@
 	</div>
 </section>
 {/if}
+
+
 <hr />
+
 
 {#if !mobile}
 <section id="projects">
@@ -222,17 +225,12 @@
 	</div>
 	<!-- <a href="https://github.com/Raulj123"style="text-decoration: none; color: #cdf0f6; " >See more on my GitHub</a> -->
 </section>
-
-
-
-
-
-
-
-
 {/if}
+
+
 <hr />
 
+{#if !mobile}
 <section id="experience">
 	<h1 class="text-center p-20" style=" font-weight: bold;">Experience</h1>
 	<Accordion class="card py-6 w-[65%] mx-auto rounded-md m-20">
@@ -249,6 +247,34 @@
 		{/each}
 	</Accordion>
 </section>
+{:else}
+<section id="experience">
+	<h1 class="text-center p-20" style=" font-weight: bold;">Experience</h1>
+	<Accordion class="card py-6 w-[85%] mx-auto rounded-md m-20">
+		{#each jobs as experience}
+			<AccordionItem>
+				<svelte:fragment slot="lead">
+					<i class="fas fa-laptop-code text-xl w-6 text-center" />
+				</svelte:fragment>
+				<svelte:fragment slot="summary"
+					><p class="font-bold" style="font-size: .9rem;">{experience.title}<br />{experience.date}</p></svelte:fragment
+				>
+				<svelte:fragment slot="content" >
+				<p style="font-size:.8rem;">{experience.content}</p>
+				</svelte:fragment>
+			</AccordionItem>
+		{/each}
+	</Accordion>
+</section>
+
+
+{/if}
+
+
+
+
+
+
 
 <hr />
 <section id="contact">

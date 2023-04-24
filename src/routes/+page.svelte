@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AppBar, Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+	import { AppBar, Accordion, AccordionItem,LightSwitch } from '@skeletonlabs/skeleton';
 	import type { experience, navLink, projects } from '../app';
 	let innerWidth = 0
 	
@@ -88,6 +88,7 @@
 
 <svelte:window bind:innerWidth  />
 {#if !mobile}
+<LightSwitch class="ml-9 mt-5"></LightSwitch>
 <AppBar class= "flex justify-between items-center w-[75%] mx-auto py-6 rounded-md">
 	
 	<ul >
@@ -102,14 +103,16 @@
 {:else}
 <AppBar class= "flex justify-between items-center w-[80%] mx-auto py-6 rounded-md">
 	
-	<ul style="margin-left: 1rem;">
+	<ul style="margin-left: 2rem;">
 		{#each navInfo as navLink}
 			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 " style=" font-weight: bold; font-size:1rem;" href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}
 	</ul>
-	
+	<ul style="margin-left: 2rem;">
+		<LightSwitch class="ml-2"></LightSwitch>
+	</ul>
 </AppBar>
 {/if}
 

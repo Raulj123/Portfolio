@@ -6,10 +6,10 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import '@fortawesome/fontawesome-free/css/all.css';
-	import { AppShell, LightSwitch} from "@skeletonlabs/skeleton";
+	import { AppShell} from "@skeletonlabs/skeleton";
 </script>
 <AppShell >
-	<LightSwitch class="ml-9 mt-4"></LightSwitch>
+
 		
 	<slot />
 	<footer class="text-center py-5">Made with 💙 by Raul</footer>

@@ -102,21 +102,21 @@
 	
 </AppBar>
 {:else}
-<AppBar class= "flex justify-between items-center w-[80%] mx-auto py-6 rounded-md">
+<LightSwitch class="ml-3 mt-5"></LightSwitch>
+<div class= "flex py-4 mt-4" style="padding-left:5vw; padding-right:5vw; justify-content:space-evenly; width:auto; align-items:center; padding:2rem;">
 	
-	<ul style="display: inline-block;">
+	<ul >
 		{#each navInfo as navLink}
-			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 " style=" font-weight: bold; font-size:1rem;" href={navLink.href}>
+			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 mr-2 " style=" font-weight: bold; font-size:1.1rem; text-decoration: none; color: #cdf0f6;" href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}
 	</ul>
-	<ul style="margin-left: 0.9rem; display: inline-block; vertical-align: middle;">
-		<LightSwitch class="ml-2"></LightSwitch>
-	</ul>
-</AppBar>
+	
+</div>
 {/if}
 
+{#if !mobile}
 <section id="about">
 	<h1 class="text-center p-40" style=" font-weight: bold;">Hey, I'am Raul</h1>
 	<img
@@ -135,7 +135,26 @@
 	</a>
 	</div>
 </section>
+{:else}
+<section id="about">
+	<h1 class="p-20 justify-center flex " style=" font-weight: bold; font-size: 1.8rem;">Hey, I'am Raul</h1>
+	<img
+		class="text-center  centered-img h-28 w-23"
+		style="margin-top: -70px; margin-bottom:15px;"
+		src="/me.png"
+		alt="3d pic of me "
+	/>
 
+	<h3 class="text-center" style=" font-weight: bold; font-size:1.2rem">CSUF'24 | Aspiring Software Enginer</h3>
+	
+	<div class=" text-center [&>.logo-item]:!bg-transparent flex justify-center  ">
+	<a class="logo-item " style="" href="./master_resume.pdf" target="_blank" >
+		<i class="fa-solid fa-file text-l  " />
+		<span style="font-size:1.1rem;">My Resume</span>
+	</a>
+	</div>
+</section>
+{/if}
 <hr />
 
 <section id="projects">

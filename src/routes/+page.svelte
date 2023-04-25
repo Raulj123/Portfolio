@@ -250,7 +250,7 @@
 {:else}
 <section id="experience">
 	<h1 class="text-center p-20" style=" font-weight: bold;">Experience</h1>
-	<Accordion class="card py-6 w-[85%] mx-auto rounded-md m-20">
+	<Accordion class="card py-6 w-[85%] mx-auto rounded-md m-10 ">
 		{#each jobs as experience}
 			<AccordionItem>
 				<svelte:fragment slot="lead">
@@ -271,12 +271,9 @@
 {/if}
 
 
-
-
-
-
-
 <hr />
+
+{#if !mobile}
 <section id="contact">
 	<h1 class="text-center pt-20" style=" font-weight: bold;">Contact Me</h1>
 
@@ -299,7 +296,30 @@
 
 	</div>
 </section>
+{:else}
+<section id="contact">
+	<h1 class="text-center pt-20" style=" font-weight: bold;">Contact Me</h1>
 
+	<h3 class="text-center  font-bold py-5" style="font-size:.9rem;"> Currently looking for Summer 2023 Software Engineer internship</h3>
+	<div class=" mx-auto flex [&>.logo-item]:!bg-transparent  gap-0.5 justify-center align-items-center">
+		<a class="logo-item " style="" href="https://github.com/Raulj123" target="_blank" >
+		<i class="fa-brands fa-github text-s" />
+		<span style="font-size:.9rem;">GitHub</span>
+		</a>
+
+		<a class="logo-item  p-6" style="" href="https://www.linkedin.com/in/rauljarquin/" target="_blank" >
+			<i class="fa-brands fa-linkedin text-s" />
+			<span style="font-size:.9rem;">LinkedIn</span>
+		</a>
+
+		<a class="logo-item" style="" href="mailto:jarquinr121@gmail.com" target="_blank" >
+			<i class="fa-solid fa-envelope text-s" />
+			<span style="font-size:.9rem;">Mail</span>
+		</a>
+
+	</div>
+</section>
+{/if}
 
 
 <style>

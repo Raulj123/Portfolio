@@ -158,7 +158,7 @@
 	<div class=" text-center [&>.logo-item]:!bg-transparent flex justify-center  ">
 	<a class="logo-item " style="" href="./master_resume.pdf" target="_blank" >
 		<i class="fa-solid fa-file text-l  " />
-		<span style="font-size:1.1rem;">My Resume</span>
+		<span class = "gradient-heading" style="font-size:1.1rem;">My Resume</span>
 	</a>
 	</div>
 </section>

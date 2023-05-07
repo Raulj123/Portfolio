@@ -126,7 +126,7 @@
 
 {#if !mobile}
 <section id="about">
-	<h1 class="text-center p-40" style=" font-weight: bold;">Hey, I'am Raul</h1>
+	<h1 class="text-center p-40 " style=" font-weight: bold;">Hey, I'am Raul</h1>
 	<img
 		class="text-center u-max-full-width centered-img h-40 w-25"
 		style="margin-top: -150px; margin-bottom:20px;"
@@ -139,7 +139,7 @@
 	<div class="logo-cloud mx-auto [&>.logo-item]:!bg-transparent grid-cols-1 lg:!grid-cols-1 gap-2.5 ">
 	<a class="logo-item" href="./master_resume.pdf" target="_blank" >
 		<i class="fa-solid fa-file text-2l" />
-		<span>My Resume</span>
+		<span class="gradient-heading">My Resume</span>
 	</a>
 	</div>
 </section>

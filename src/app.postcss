@@ -5,3 +5,10 @@ html, body { @apply h-full; }
 	src: url('/fonts/SpaceGrotesk.ttf');
 	font-display: swap;
 }
+.gradient-heading {
+	@apply bg-clip-text text-transparent box-decoration-clone;
+	/* Direction */
+	@apply bg-gradient-to-br;
+	/* Color Stops */
+	@apply from-primary-500 via-tertiary-500 to-secondary-500;
+}

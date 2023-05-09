@@ -1,8 +1,15 @@
 <script lang="ts">
-	import { AppBar, Accordion, AccordionItem,LightSwitch } from '@skeletonlabs/skeleton';
+	import { AppBar, Toast, toastStore, Accordion, AccordionItem,LightSwitch } from '@skeletonlabs/skeleton';
 	import type { experience, navLink, projects } from '../app';
+  import type {ToastSettings} from '@skeletonlabs/skeleton'
 	let innerWidth = 0
-	
+  function pokeMe(){
+    const t: ToastSettings ={
+      message: 'Probably playing siege or coding 🤷',
+    };
+    toastStore.trigger(t)
+    console.log("test")
+  }
 
 	$: mobile = innerWidth < 1080; 
 	$:{
@@ -94,7 +101,7 @@
 	
 </script>
 
-
+<Toast/>
 <svelte:window bind:innerWidth  />
 {#if !mobile}
 <LightSwitch class="ml-9 mt-5 "></LightSwitch>
@@ -132,6 +139,7 @@
 		style="margin-top: -150px; margin-bottom:20px;"
 		src="/me.png"
 		alt="3d pic of me "
+    on:click={pokeMe}
 	/>
 
 	<h3 class="text-center" style=" font-weight: bold;">CSUF'24 | Aspiring Software Enginer</h3>
@@ -151,6 +159,7 @@
 		style="margin-top: -70px; margin-bottom:15px;"
 		src="/me.png"
 		alt="3d pic of me "
+    on:click={pokeMe}
 	/>
 
 	<h3 class="text-center" style=" font-weight: bold; font-size:1.2rem">CSUF'24 | Aspiring Software Enginer</h3>

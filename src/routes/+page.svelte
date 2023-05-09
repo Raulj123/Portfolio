@@ -5,7 +5,7 @@
 	let innerWidth = 0
   function pokeMe(){
     const t: ToastSettings ={
-      message: 'Probably playing siege or coding 🤷',
+      message: 'Probably playing Siege or coding 🤷',
     };
     toastStore.trigger(t)
     console.log("test")
@@ -118,11 +118,11 @@
 	
 </AppBar>
 {:else}
-<div class= " flex py-4 mt-4 " style="padding-left:5vw; padding-right:5vw; justify-content:space-evenly; width:auto; align-items:center; padding:2rem;">
+<div class= " flex py-4 " style="padding-left:5vw; padding-right:5vw; justify-content:space-evenly; width:auto; align-items:center; padding:2rem;">
 	
 	<ul>
 		{#each navInfo as navLink}
-			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-6 mr-6 " style=" font-weight: bold; font-size:1.1rem; text-decoration: none; color: #cdf0f6; " href={navLink.href}>
+			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 mr-2 " style=" font-weight: bold; font-size:1.1rem; text-decoration: none; color: #cdf0f6; " href={navLink.href}>
 				{navLink.title}</a
 			>
 		{/each}
@@ -326,22 +326,22 @@
 	<h3 class="text-center  font-bold py-5" style="font-size:.9rem;"> Currently looking for Summer 2023 Software Engineer internship</h3>
 	<div class=" mx-auto flex [&>.logo-item]:!bg-transparent  gap-0.5 justify-center align-items-center">
 		<a class="logo-item ml-6 " style="" href="https://github.com/Raulj123" target="_blank" >
-		<i class="fa-brands fa-github text-s" />
-		<span style="font-size:.9rem;">GitHub</span>
+		<i class="fa-brands fa-github text-xs" />
+		<span style="font-size:.8rem;">GitHub</span>
 		</a>
 
 		<a class="logo-item  p-6" style="" href="https://www.linkedin.com/in/rauljarquin/" target="_blank" >
-			<i class="fa-brands fa-linkedin text-s" />
-			<span style="font-size:.9rem;">LinkedIn</span>
+			<i class="fa-brands fa-linkedin text-xs" />
+			<span style="font-size:.8rem;">LinkedIn</span>
 		</a>
 
 		<a class="logo-item" style="" href="mailto:jarquinr121@gmail.com" target="_blank" >
-			<i class="fa-solid fa-envelope text-s" />
-			<span style="font-size:.9rem;">Mail</span>
+			<i class="fa-solid fa-envelope text-xs" />
+			<span style="font-size:.8rem;">Mail</span>
 		</a>
      <p class="logo-item p-6 " >
-        <i class="fa-brands fa-discord text-s"/>
-        <span style="font-size:.9rem;">raulj123#5611</span>
+        <i class="fa-brands fa-discord text-xs"/>
+        <span style="font-size:.8rem;">raulj123#5611</span>
       </p>
 	</div>
 </section>

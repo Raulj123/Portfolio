@@ -302,7 +302,7 @@
 	<h1 class="text-center pt-20" style=" font-weight: bold;">Contact Me</h1>
 
 	<h3 class="text-center  font-bold py-5"> Currently looking for Summer 2023 Software Engineer internship</h3>
-	<div class="logo-cloud mx-auto [&>.logo-item]:!bg-transparent grid-cols-4 gap-0.5 ">
+	<div class="logo-cloud mx-auto  [&>.logo-item]:!bg-transparent grid-cols-4"style="width: 60%;">
 		<a class="logo-item" href="https://github.com/Raulj123" target="_blank" >
 		<i class="fa-brands fa-github text-2l" />
 		<span>GitHub</span>
@@ -317,10 +317,10 @@
 			<i class="fa-solid fa-envelope text-2l" />
 			<span>Mail</span>
 		</a>
-    <p class="logo-item p-6"  >
-        <i class="fa-brands fa-discord text-xl"/>
+    <a class="logo-item"  >
+        <i class="fa-brands fa-discord text-2l"/>
         <span>raulj123#5611</span>
-    </p>
+    </a>
 
 
 	</div>
@@ -330,24 +330,24 @@
 	<h1 class="text-center pt-20" style=" font-weight: bold;">Contact Me</h1>
 
 	<h3 class="text-center  font-bold py-5" style="font-size:.93rem;"> Currently looking for Summer 2023 Software Engineer internship</h3>
-	<div class=" mx-auto  [&>.logo-item]:!bg-transparent  justify-center align-items-center grid-cols-1">
-		<a class="logo-item ml-6 " href="https://github.com/Raulj123" target="_blank" >
-		<i class="fa-brands fa-github text-l" style="margin-left:0px;" />
-		<span style="font-size:.9rem;">GitHub</span>
+	<div class="logo-cloud mx-auto  [&>.logo-item]:!bg-transparent  justify-center align-items-center grid-cols-2"style="width: 100%;">
+		<a class="logo-item " href="https://github.com/Raulj123" target="_blank" >
+		<i class="fa-brands fa-github text-s" style="margin-left:0px;" />
+		<span style="font-size:.8rem;">GitHub</span>
 		</a>
 
-		<a class="logo-item  ml-6"  href="https://www.linkedin.com/in/rauljarquin/" target="_blank" >
-			<i class="fa-brands fa-linkedin text-l" style="margin-left:0px;" />
-			<span style="font-size:.9rem;">LinkedIn</span>
+		<a class="logo-item "  href="https://www.linkedin.com/in/rauljarquin/" target="_blank" >
+			<i class="fa-brands fa-linkedin text-s" style="margin-left:0px;" />
+			<span style="font-size:.8rem;">LinkedIn</span>
 		</a>
 
-		<a class="logo-item ml-6" href="mailto:jarquinr121@gmail.com" target="_blank" >
-			<i class="fa-solid fa-envelope text-l" style="margin-left:0px;" />
-			<span style="font-size:.9rem;">Mail</span>
+		<a class="logo-item " href="mailto:jarquinr121@gmail.com" target="_blank" >
+			<i class="fa-solid fa-envelope text-s" style="margin-left:0px;" />
+			<span style="font-size:.8rem;">Mail</span>
 		</a>
-     <p class="logo-item  ml-6" >
-        <i class="fa-brands fa-discord text-l" style="margin-left:0px;"/>
-        <span style="font-size:.9rem;">raulj123#5611</span>
+     <p class="logo-item " >
+        <i class="fa-brands fa-discord text-s" style="margin-left:0px;"/>
+        <span style="font-size:.8rem;">raulj123#5611</span>
       </p>
 	</div>
 </section>

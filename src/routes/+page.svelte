@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AppBar, Toast, toastStore, Accordion, AccordionItem,LightSwitch } from '@skeletonlabs/skeleton';
+	import { AppBar, Toast, toastStore, Accordion, AccordionItem,LightSwitch, clipboard } from '@skeletonlabs/skeleton';
 	import type { experience, navLink, projects } from '../app';
   import type {ToastSettings} from '@skeletonlabs/skeleton'
 	let innerWidth = 0
@@ -8,12 +8,12 @@
       message: 'Probably playing Siege or coding 🤷',
     };
     toastStore.trigger(t)
-    console.log("test")
+    //console.log("test")
   }
   
   function copyToClipboard(){
     const t: ToastSettings={
-      message: 'raulj123#5611 copied to clipboard!'
+      message: 'raulj123#5611 copied to clipboard!',
     };
     toastStore.trigger(t)
   }
@@ -319,7 +319,7 @@
 		</a>
     <a class="logo-item"  >
         <i class="fa-brands fa-discord text-2l"/>
-        <span>raulj123#5611</span>
+        <span on:click={copyToClipboard} use:clipboard={'raulj123#5611'}>raulj123#5611</span>
     </a>
 
 
@@ -347,7 +347,7 @@
 		</a>
      <p class="logo-item " >
         <i class="fa-brands fa-discord text-s" style="margin-left:0px;"/>
-        <span style="font-size:.8rem;">raulj123#5611</span>
+        <span style="font-size:.8rem;" on:click={copyToClipboard} use:clipboard={'raulj123#5611'}>raulj123#5611</span>
       </p>
 	</div>
 </section>

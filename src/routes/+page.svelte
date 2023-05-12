@@ -141,7 +141,7 @@
 <section id="about">
 	<h1 class="text-center p-40 " style=" font-weight: bold;">Hey, I'am Raul</h1>
 	<img
-		class="text-center u-max-full-width centered-img h-40 w-25"
+		class="floating text-center u-max-full-width centered-img h-40 w-25"
 		style="margin-top: -150px; margin-bottom:20px;"
 		src="/me.png"
 		alt="3d pic of me "
@@ -161,7 +161,7 @@
 <section id="about">
 	<h1 class="p-20 justify-center flex " style=" font-weight: bold; font-size: 1.8rem;">Hey, I'am Raul</h1>
 	<img
-		class="text-center  centered-img h-28 w-23"
+		class="floating text-center  centered-img h-28 w-23"
 		style="margin-top: -70px; margin-bottom:15px;"
 		src="/me.png"
 		alt="3d pic of me "
@@ -413,5 +413,18 @@
   background-color: #f2f2f2; /* change background color when hovering */
   color:#3B82F6; /* change text color when hovering */
 }
-
+.floating{
+    animation: floating 3000ms ease-in-out infinite;
+  }
+  @keyframes floating{
+    0%{
+      transform: translate(0,opx);
+    }
+    50%{
+      transform: translate(0,10px);
+    }
+    100%{
+      transform: translate(0, -0px);
+    }
+  }
 </style>

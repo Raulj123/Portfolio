@@ -17,8 +17,10 @@
 		console.log(innerWidth)
 	}
 	
-	
+
+
 </script>
+	<svelte:window bind:innerWidth/>
 <Toast/>
 {#if !mobile}
 <section id="about">

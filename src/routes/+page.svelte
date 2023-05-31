@@ -2,7 +2,6 @@
 	import { AppBar, Toast, toastStore, Accordion, AccordionItem,LightSwitch, clipboard } from '@skeletonlabs/skeleton';
 	import type { experience, navLink, projects } from '../app';
   import type {ToastSettings} from '@skeletonlabs/skeleton'
-  import {projects} from './projects.ts'
   import Nav from './nav.svelte' 
   import Hero from './hero.svelte'
   import Projects from './projects.svelte'
@@ -151,72 +150,11 @@
 	a {
 		font-size: 20px;
 	}
-	.centered-img {
-		display: block;
-		margin: 0 auto;
-	}
 	hr {
 		margin-top: 100px;
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.card {
-		max-width: 320px;
-		padding-top: 0px;
-		margin-right: 20px;
-		margin-left: 20px;
-		margin-bottom: 25px;
-		border-radius: 20px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-		transition: box-shadow 0.3s ease-in-out;
-		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	}
-	.cardMobile{
-		max-width: 250px;
-		padding-top: 0px;
-		margin-right: 20px;
-		margin-left: 20px;
-		margin-bottom: 25px;
-		border-radius: 20px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-		transition: box-shadow 0.3s ease-in-out;
-		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	}
-	.card:hover {
-		/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   didnt like how this one looked*/
-		transform: scale(1.15);
-	}
 
-	.cardContainer {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-
-	}
-	.logo-cloud{
-		width:30em;
-		border-radius: 0.5rem;
-	}
-	.logo-item {
-  border-radius: 0.5rem;
-	}
-	.logo-item:hover {
-  background-color: #f2f2f2; /* change background color when hovering */
-  color:#3B82F6; /* change text color when hovering */
-}
-.floating{
-    animation: floating 3000ms ease-in-out infinite;
-  }
-  @keyframes floating{
-    0%{
-      transform: translate(0,opx);
-    }
-    50%{
-      transform: translate(0,10px);
-    }
-    100%{
-      transform: translate(0, -0px);
-    }
-  }
 </style>

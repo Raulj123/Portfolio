@@ -7,7 +7,7 @@
 		console.log(innerWidth)
 	}
 </script>
-
+	<svelte:window bind:innerWidth/>
 {#if !mobile}
 <section id="projects">
 	<h1 class="text-center p-20" style=" font-weight: bold;">Projects</h1>

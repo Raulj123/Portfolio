@@ -5,6 +5,7 @@
   import {projects} from './projects.ts'
   import Nav from './nav.svelte' 
   import Hero from './hero.svelte'
+  import Projects from './projects.svelte'
 	let innerWidth = 0
   function pokeMe(){
     const t: ToastSettings ={
@@ -44,77 +45,7 @@
 
 <Nav/>
 <Hero/>
-{#if !mobile}
-<section id="projects">
-	<h1 class="text-center p-20" style=" font-weight: bold;">Projects</h1>
-	<div class="cardContainer">
-		{#each projects as projects}
-			<div class="card">
-				<a href={projects.href} style="text-decoration: none; color: #cdf0f6;" target="_blank">
-					<img
-						class="centered-img h-45 w-90 "
-						style="border-radius-bottom:9px; object-fit: contain;"
-						src={projects.image}
-						alt="project"
-					/>
-				</a>
-				<h3 class="text-left p-2" style=" font-weight: bold;">{projects.title}</h3>
-				{#each projects.badges as badge, i}
-					<span class="badge variant-filled ml-3 m-1 h-6 w-100%"
-						>{badge}
-						<img
-							class="text-center u-max-full-width centered-img h-5 w-5 p-1 "
-							style="background-color: transparent;"
-							src={projects.badgesPic[i]}
-							alt={badge}
-						/>
-					</span>
-				{/each}
-
-				<p class="text-center py-3">{projects.content}</p>
-			</div>
-		{/each}
-	</div>
-	<!-- <a href="https://github.com/Raulj123"style="text-decoration: none; color: #cdf0f6; " >See more on my GitHub</a> -->
-</section>
-{:else}
-<section id="projects">
-	<h1 class="text-center p-20" style=" font-weight: bold;">Projects</h1>
-	<div class="cardContainer">
-		{#each projects as projects}
-			<div class="cardMobile">
-				<a href={projects.href} style="text-decoration: none; color: #cdf0f6;" target="_blank">
-					<img
-						class="text-center centered-img h-35 w-75"
-						style="border-radius-bottom:9px;"
-						src={projects.image}
-						alt="Notess web screenshot"
-					/>
-				</a>
-				<h3 class="text-left p-2" style=" font-weight: bold; font-size:1.1rem;">{projects.title}</h3>
-				{#each projects.badges as badge, i}
-					<span class="badge variant-filled ml-3" style="font-size:.5rem;"
-						>{badge}
-						<img
-							class="text-center u-max-full-width centered-img h-4 w-4 p-1"
-							style="background-color: transparent;"
-							src={projects.badgesPic[i]}
-							alt={badge}
-						/>
-					</span>
-				{/each}
-
-				<p class="text-center py-3" style="font-size:.8rem;">{projects.content}</p>
-			</div>
-		{/each}
-	</div>
-	<!-- <a href="https://github.com/Raulj123"style="text-decoration: none; color: #cdf0f6; " >See more on my GitHub</a> -->
-</section>
-{/if}
-
-
-<hr />
-
+<Projects/>
 {#if !mobile}
 <section id="experience">
 	<h1 class="text-center p-20" style=" font-weight: bold;">Experience</h1>

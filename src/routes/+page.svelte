@@ -3,6 +3,7 @@
 	import type { experience, navLink, projects } from '../app';
   import type {ToastSettings} from '@skeletonlabs/skeleton'
   import {projects} from './projects.ts'
+  import Nav from './nav.svelte' 
 	let innerWidth = 0
   function pokeMe(){
     const t: ToastSettings ={
@@ -68,36 +69,7 @@
 	
 </script>
 
-<Toast/>
-<svelte:window bind:innerWidth  />
-{#if !mobile}
-<LightSwitch class="ml-9 mt-5 "></LightSwitch>
-<AppBar class= "flex justify-between items-center w-[75%] mx-auto py-6 rounded-md">
-	
-	<ul>
-		{#each navInfo as navLink}
-			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-11 " style=" font-weight: bold;" href={navLink.href}>
-				{navLink.title}</a
-			>
-		{/each}
-	</ul>
-	
-	
-</AppBar>
-{:else}
-<div class= " flex py-4 " style="padding-left:5vw; padding-right:5vw; justify-content:space-evenly; width:auto; align-items:center; padding:2rem;">
-	
-	<ul>
-		{#each navInfo as navLink}
-			<a on:click|preventDefault={() => scrollToSection(navLink.href)} class="hover:text-blue-500 ml-2 mr-2 " style=" font-weight: bold; font-size:1.1rem; text-decoration: none; color: #cdf0f6; " href={navLink.href}>
-				{navLink.title}</a
-			>
-		{/each}
-	</ul>
-	
-</div>
-{/if}
-
+<Nav/>
 {#if !mobile}
 <section id="about">
 	<h1 class="text-center p-40 " style=" font-weight: bold;">Hey, I'am Raul</h1>

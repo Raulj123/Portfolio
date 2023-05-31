@@ -7,22 +7,7 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
-export interface navLink{
-	title:string
-	href:string 
-}
-
-export interface projects{
-	href:string
-	image:string
-	title:string
-	badges:string[]
-	badgesPic: string[]
-	content:string
-}
-
-export interface experience {
-	title: string
-	date: string
-	content: string 
+export interface navLink {
+	title: string;
+	href: string;
 }

@@ -74,7 +74,7 @@
 				<p class="text-center py-3" style="font-size:.7rem;">{projects.content}</p>
         </div>
  <a href="" class="py-3 "         onmouseover="this.style.color='#3B82F6'" onmouseout="this.style.color='#cdf0f6'" style=" color: white;text-decoration: none; text-align:center; display:flex; align-items:center; flex-direction:row; border: 1px solid #658594; width:100px; height:45px; margin:0 auto;
- margin-top:10px; margin-bottom:10px; border-radius:10px;"><i class="fa-solid fa-link fa-bounce m-3"></i>Link</a>
+ margin-top:10px; margin-bottom:10px; border-radius:10px; font-size:0.8rem;"><i class="fa-solid fa-link fa-bounce m-3"></i>Link</a>
         </div>
 
 		{/each}

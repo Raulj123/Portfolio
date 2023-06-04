@@ -18,7 +18,7 @@ export const projects = [
 		image: './project_imgs/Notess.png',
 		title: 'Notess',
 		badges: ['PHP', 'MySQL'],
-		badgesPic: ['./icons/php.svg', './icons/database.png'],
+		badgesPic: ['./icons/php.png', './icons/database.png'],
 		content:
 			'Notess is a web-based note-taking application that allows users to create accounts, log in securely, and save notes. The app is designed to provide a user-friendly platform for taking and storing notes. Users can retrieve and edit their notes at any time'
 	},

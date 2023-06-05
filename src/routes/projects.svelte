@@ -16,7 +16,7 @@
 			<div class="card">
 									<img
 						class="centered-img h-45 w-90 "
-						style="border-radius:10px; object-fit: contain; height:170px; width:350px;"
+						style="border-radius:5px; object-fit: contain; height:175px; width:350px;"
 						src={projects.image}
 						alt="project"
 					/>
@@ -109,8 +109,7 @@
 	}
   
 	.card {
-    border: 1px solid #658594;
-		max-width: 320px;
+		max-width: 348px;
 		padding-top: 0px;
 		margin-right: 20px;
 		margin-left: 20px;
@@ -121,7 +120,6 @@
 		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 	.cardMobile{
- border: 1px solid #658594;
 
 		max-width: 260px;
 		padding-top: 0px;
@@ -135,7 +133,15 @@
 	}
 	.card:hover {
 		/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   didnt like how this one looked*/
-		transform: scale(1.15);
+		transform: scale(1.04); 
+  border: 3px solid #658594;
+  border-radius:5px;
+	}
+	.cardMobile:hover {
+		/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   didnt like how this one looked*/
+		transform: scale(1.04); 
+  border: 3px solid #658594;
+  border-radius:5px;
 	}
 
 	.cardContainer {

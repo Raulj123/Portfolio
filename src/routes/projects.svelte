@@ -21,6 +21,7 @@
 						alt="project"
 					/>
 				<h3 class="text-left p-2" style=" font-weight: bold;">{projects.title}</h3>
+          <hr>
 				{#each projects.badges as badge, i}
 					<span class="badge variant-filled ml-3 m-1 h-6 w-100%"
 						>{badge}
@@ -38,6 +39,7 @@
  <a href={projects.href} class="py-3 "                    style=" color: #658594;text-decoration: none; text-align:center; display:flex; align-items:center; 
             flex-direction:row; border: 1px solid #658594; width:100px; height:50px; margin:0 auto;
  margin-top:10px; margin-bottom:10px; border-radius:10px;"><i class="fa-solid fa-link fa-bounce m-3"></i>Link</a>
+
         </div>
 
 		{/each}
@@ -102,10 +104,10 @@
 		margin: 0 auto;
 	}
 	hr {
-		margin-top: 100px;
-		width: 80%;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
+    margin-bottom: 10px;
 	}
   
 	.card {

@@ -43,7 +43,7 @@
 	</div>
 </section>
 {:else}
-<section id="about">
+ <section id="about">
 	<h1 class="p-20 justify-center flex " style=" font-weight: bold; font-size: 1.8rem;">Hey, I'am Raul</h1>
 	<img
 		class="floating text-center  centered-img h-28 w-23"
@@ -61,6 +61,7 @@
 		<span class = "gradient-heading" style="font-size:1.1rem;">My Resume</span>
 	</a>
 	</div>
+
 </section>
 {/if}
 
@@ -68,6 +69,11 @@
 <hr />
 
 <style>
+  
+  .conatiner{
+    position:relative;
+    z-index:1;
+  }
 	.centered-img {
 		display: block;
 		margin: 0 auto;
@@ -92,5 +98,17 @@
       transform: translate(0, -0px);
     }
   }
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
 
 </style>

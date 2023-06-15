@@ -36,7 +36,7 @@
         <div class="content-container">
 				<p class="text-center py-3">{projects.content}</p>
         </div>
- <a href={projects.href} class="py-3 "                    style=" color: #658594;text-decoration: none; text-align:center; display:flex; align-items:center; 
+ <a href={projects.href} class="py-3 "                    style=" color: white;text-decoration: none; text-align:center; display:flex; align-items:center; 
             flex-direction:row; border: 1px solid #658594; width:100px; height:50px; margin:0 auto;
  margin-top:10px; margin-bottom:10px; border-radius:10px;"><i class="fa-solid fa-link fa-bounce m-3"></i>Link</a>
 
@@ -95,7 +95,7 @@
 	a {
 		font-size: 20px;
     text-decoration: none;
-    color: #658594;
+    color: white;
 
 	}
 
@@ -136,13 +136,13 @@
 	.card:hover {
 		/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   didnt like how this one looked*/
 		transform: scale(1.04); 
-  border: 3px solid #658594;
+  border: 1px solid white;
   border-radius:5px;
 	}
 	.cardMobile:hover {
 		/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   didnt like how this one looked*/
 		transform: scale(1.04); 
-  border: 3px solid #658594;
+  border: 3px solid white;
   border-radius:5px;
 	}
 

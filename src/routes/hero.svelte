@@ -1,36 +1,50 @@
 <script lang="ts">
-	import {Toast, toastStore,clipboard } from '@skeletonlabs/skeleton';
+	import {Modal, Toast, toastStore,clipboard, modalStore } from '@skeletonlabs/skeleton';
+  import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
 	
+
   import type {ToastSettings} from '@skeletonlabs/skeleton'
   
 	let innerWidth = 0
-  function pokeMe(){
-    const t: ToastSettings ={
-      message: 'Probably playing Siege or coding 💥',
-    };
-    toastStore.trigger(t)
-    //console.log("test")
-  }
+  
   
   	$: mobile = innerWidth < 1080; 
 	$:{
 		console.log(innerWidth)
 	}
 	
-
-
+function modalHero(): void {
+    const modal: ModalSettings = {
+      type: 'alert',
+      title: "About me",
+      body: "I'm a first-gen student from Mexico City 🇲🇽 who moved to California when I was just a baby. Fun fact: I have a twin! I love staying active by working out, playing soccer, and hanging out with friends. (Me in the upside down bruh🌀)",
+      image:  '/me.jpg'
+    };
+    console.log("test")
+    modalStore.trigger(modal);
+  }
+ function pokeMe(){
+    const t: ToastSettings ={
+      message: 'Probably playing Siege or coding 💥',
+    };
+    toastStore.trigger(t)
+    //console.log("test")
+  } 
 </script>
 	<svelte:window bind:innerWidth/>
-<Toast/>
-{#if !mobile}
+{#if !mobile} 
+  <Modal/>
+ 
+
 <section id="about">
 	<h1 class="text-center p-40 " style=" font-weight: bold;">Hey, I'am Raul</h1>
+ 
 	<img
 		class="floating text-center u-max-full-width centered-img h-40 w-25"
 		style="margin-top: -150px; margin-bottom:20px;"
 		src="/me.png"
 		alt="3d pic of me "
-    on:click={pokeMe}
+    on:click={modalHero}
 	/>
 
 	<h3 class="text-center" style=" font-weight: bold;">CSUF'24 | Aspiring Software Enginer</h3>
@@ -50,9 +64,8 @@
 		style="margin-top: -70px; margin-bottom:15px;"
 		src="/me.png"
 		alt="3d pic of me "
-    on:click={pokeMe}
+         on:click={pokeMe}
 	/>
-
 	<h3 class="text-center" style=" font-weight: bold; font-size:1.2rem">CSUF'24 | Aspiring Software Enginer</h3>
 	
 	<div class=" text-center [&>.logo-item]:!bg-transparent flex justify-center  ">

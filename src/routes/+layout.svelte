@@ -8,11 +8,11 @@
 	import '@fortawesome/fontawesome-free/css/all.css';
 	import { AppShell} from "@skeletonlabs/skeleton";
 </script>
+
 <AppShell >
 
-		
 	<slot />
-	<footer class="text-center py-5">Made with 💙 by Raul</footer>
+	<footer class="text-center py-5 ">Made with 💙 by Raul</footer>
 </AppShell>
 
 

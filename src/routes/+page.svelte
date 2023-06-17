@@ -45,6 +45,7 @@
 <Nav/>
 <Hero/>
 <Projects/>
+<Toast/>
 {#if !mobile}
 <section id="experience">
 	<h1 class="text-center p-20" style=" font-weight: bold;">Experience</h1>

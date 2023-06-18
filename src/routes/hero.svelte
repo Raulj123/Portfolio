@@ -83,10 +83,6 @@ function modalHero(): void {
 
 <style>
   
-  .conatiner{
-    position:relative;
-    z-index:1;
-  }
 	.centered-img {
 		display: block;
 		margin: 0 auto;

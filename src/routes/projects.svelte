@@ -25,6 +25,7 @@
 				{#each projects.badges as badge, i}
 					<span class="badge variant-filled ml-3 m-1 h-6 w-100%"
 						>{badge}
+						
 						<img
 							class="text-center u-max-full-width centered-img h-5 w-5 p-0.5"
 							style="background-color: transparent;"

@@ -21,6 +21,8 @@
 {#if !mobile}
 	<section id="experience">
 		<h1 class="text-center p-10" style=" font-weight: bold;">Experience</h1>
+    <div class="Whole">
+      <div class="exp_sec">
 		{#each experience as experience}
 		<div class="experience">
 			<div class="line"></div>
@@ -43,7 +45,11 @@
 			</div>
 		</div>
 	{/each}
+        </div>
+        <div class="tech_sec">
   <TechStack/>
+        </div>
+  </div>
 	</section>
 	
 {:else}
@@ -71,16 +77,37 @@
 			</div>
 		</div>
 	{/each}
+	<div class="tech_sec w-5/6 mt-5" style="padding-left: 2.9rem;">
+		<TechStack/>
+			  </div>
 	</section>
  
 {/if}
 
 <style>
+  .Whole{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  width: 95vw;
+  margin: 0 auto;
+   grid-column-gap: 1rem; 
+
+  }
+  .exp_sec{
+    grid-column-start: span 2;
+  }
+  .tech_sec{
+    
+    grid-column-start: 3;
+  }
 	.experience {
-		padding-left: 1rem;
-		position: relative;
-		display: flex;
+		padding-left: 0.1rem;
+				display: flex;
 		gap: 1rem;
+  
+  
 	}
 	.line {
 		background: #808080;
@@ -135,7 +162,7 @@
 
 	
 	p {
-		font-weight: bold;
+		font-weight: light;
 		font-size: 0.8rem;
 		min-width: 3rem;
 		max-width: 50rem;
@@ -143,7 +170,7 @@
 
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 2;
+		-webkit-line-clamp: 3;
 		line-clamp: 2;
 		overflow: hidden;
 	}

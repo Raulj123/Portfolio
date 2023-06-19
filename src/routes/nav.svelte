@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { AppBar,LightSwitch} from '@skeletonlabs/skeleton';
-  import {projects} from './projects.ts'
 	let innerWidth = 0
     
  	$: mobile = innerWidth < 1080; 
@@ -16,7 +15,7 @@
   
   	}
 
-	let navInfo: navLink[] = [
+	let navInfo = [
 		{
 			title: 'About',
 			href: 'about',

@@ -57,8 +57,9 @@
 		<h1 class="text-center p-10" style=" font-weight: bold;">Experience</h1>
     {#each experience as experience}
 		<div class="experience">
-			<div class="line"></div>
-			<img class="logo"src={experience.img} alt={experience.img} />
+			<div class="line" style="	transform: translateX(2.8rem);
+"></div>
+			<img class="logo"src={experience.img} alt={experience.img} style="width:3.5rem; height:3.5rem;" />
 			<div class="info">
 				<h5 class="title">
 					<span class="position">{experience.title}</span>
@@ -103,7 +104,7 @@
     grid-column-start: 3;
   }
 	.experience {
-		padding-left: 0.1rem;
+		padding-left: 0rem;
 				display: flex;
 		gap: 1rem;
   

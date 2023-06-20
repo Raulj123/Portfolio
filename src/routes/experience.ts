@@ -1,4 +1,13 @@
-export const experience = [	
+export const experience = [
+	{
+		company: 'Zymo Research Corp',
+		title: 'Back End Web Development',
+		img: 'https://media.licdn.com/dms/image/C560BAQEzVCEClmqU8A/company-logo_200_200/0/1519888483761?e=1695254400&v=beta&t=0BqTCMsQCTiCHsWCKpH0WMUMTVgTApJzOd74W1kJzhk',
+		href: 'https://www.zymoresearch.com/',
+		date: 'Jun 2023 - Aug 2023',
+		content: 'TBD',
+		badges: ['TBD']
+	},
 	{
 		company: 'Code Ninjas',
 		title: 'STEM Instructor',
@@ -7,11 +16,18 @@ export const experience = [
 		date: 'Aug 2021 – Present',
 		content:
 			'I taught small groups of children, ages 4 to 13, coding and STEM concepts using programming languages like Scratch Jr., Scratch, Roblox Studio, Unity, and a custom JavaScript-based game development platform exclusive to the Code Ninjas curriculum.',
-		badges: ['https://img.shields.io/badge/Unity-black?logo=unity','https://img.shields.io/badge/Roblox%20Studio-grey?logo=roblox','https://img.shields.io/badge/javascrpt-blue?logo=javascript','https://img.shields.io/badge/Lua-green?logo=lua','https://img.shields.io/badge/C%23-blue?logo=C-sharp','https://img.shields.io/badge/scratch-orange?logo=scratch']
+		badges: [
+			'https://img.shields.io/badge/Unity-black?logo=unity',
+			'https://img.shields.io/badge/Roblox%20Studio-grey?logo=roblox',
+			'https://img.shields.io/badge/javascrpt-blue?logo=javascript',
+			'https://img.shields.io/badge/Lua-green?logo=lua',
+			'https://img.shields.io/badge/C%23-blue?logo=C-sharp',
+			'https://img.shields.io/badge/scratch-orange?logo=scratch'
+		]
 	},
 
 	{
-		company:'Code Campus',
+		company: 'Code Campus',
 		title: 'STEM Instructor',
 		img: '/company_imgs/codeCampus.jpeg',
 		href: 'https://www.codecampus.com/',

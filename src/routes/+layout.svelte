@@ -12,7 +12,7 @@
 <AppShell >
 
 	<slot />
-	<footer class="text-center py-5 ">Made with 💙 by Raul</footer>
+	<footer class="text-center py-5 card w-[99%] mx-auto m-5 ">Made with 💙 by Raul</footer>
 </AppShell>
 
 

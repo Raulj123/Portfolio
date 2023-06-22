@@ -1,7 +1,7 @@
 export const experience = [
 	{
 		company: 'Zymo Research Corp',
-		title: 'Back End Web Development',
+		title: 'FullStack Software Engineer Intern',
 		img: 'https://media.licdn.com/dms/image/C560BAQEzVCEClmqU8A/company-logo_200_200/0/1519888483761?e=1695254400&v=beta&t=0BqTCMsQCTiCHsWCKpH0WMUMTVgTApJzOd74W1kJzhk',
 		href: 'https://www.zymoresearch.com/',
 		date: 'Jun 2023 - Aug 2023',

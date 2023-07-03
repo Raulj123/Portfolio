@@ -1,12 +1,16 @@
 export const experience = [
 	{
 		company: 'Zymo Research Corp',
-		title: 'FullStack Software Engineer Intern',
+		title: 'Back-End Web Developer Intern',
 		img: 'https://media.licdn.com/dms/image/C560BAQEzVCEClmqU8A/company-logo_200_200/0/1519888483761?e=1695254400&v=beta&t=0BqTCMsQCTiCHsWCKpH0WMUMTVgTApJzOd74W1kJzhk',
 		href: 'https://www.zymoresearch.com/',
 		date: 'Jun 2023 - Aug 2023',
 		content: 'TBD',
-		badges: ['TBD']
+		badges: ['https://img.shields.io/badge/Django-black?logo=django',
+				'https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white',
+				'https://img.shields.io/badge/Python-blue?logo=python&logoColor=white',
+
+				]
 	},
 	{
 		company: 'Code Ninjas',

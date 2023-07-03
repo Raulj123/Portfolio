@@ -15,8 +15,5 @@
 <Projects/>
 <Experience/>
 <Toast/>
-
-
-<hr />
 <Contact/>
 

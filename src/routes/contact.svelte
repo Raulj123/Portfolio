@@ -14,6 +14,7 @@ let innerWidth = 0;
 <svelte:window bind:innerWidth />
 
 {#if !mobile}
+<hr>
   <section id="contact">
 	<h1 class="text-center pt-20" style=" font-weight: bold;">Contact Me</h1>
 
@@ -42,6 +43,7 @@ let innerWidth = 0;
 	</div>
 </section>
 {:else}
+<hr>
 <section id="contact">
 	<h1 class="text-center pt-20" style=" font-weight: bold;">Contact Me</h1>
 
@@ -73,5 +75,11 @@ let innerWidth = 0;
   a:hover{
     color:#EC4899;
   }
+  hr {
+		margin-top: 100px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 </style>
 

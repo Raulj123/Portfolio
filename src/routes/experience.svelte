@@ -53,7 +53,6 @@
 		</div>
 	</section>
 {:else}
-<hr>
 	<section id="experience">
 		<h1 class="text-center p-10" style=" font-weight: bold;">Experience</h1>
 		{#each experience as experience}

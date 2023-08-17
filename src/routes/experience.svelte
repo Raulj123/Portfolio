@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { experience } from './experience';
+	import { projects } from './projects';
 	import TechStack from './techStack.svelte';
 	import {
 		AppBar,
@@ -36,7 +37,15 @@
 							</h5>
 							<p class="date">{experience.date}</p>
 							<p class="description">{experience.content}</p>
-
+							{#if experience.project}
+								<h6>Projects</h6>
+								<div class="project_container">
+									<div class="sub_project">
+										<img class="logo_project" src={experience.img} alt={experience.img} />
+										<p class="p_tag">{experience.project.name}</p>
+									</div>
+								</div>
+							{/if}
 							<h6>Core Technologies</h6>
 							<div class="technologies">
 								{#each experience.badges as badge, i}
@@ -76,7 +85,15 @@
 					</h5>
 					<p class="date">{experience.date}</p>
 					<p class="description" style="-webkit-line-clamp: 10;">{experience.content}</p>
-
+					{#if experience.project}
+								<h6>Projects</h6>
+								<div class="project_container">
+									<div class="sub_project">
+										<img class="logo_project" src={experience.img} alt={experience.img} />
+										<p class="p_tag">{experience.project.name}</p>
+									</div>
+								</div>
+							{/if}
 					<h6>Core Technologies</h6>
 					<div class="technologies">
 						{#each experience.badges as badge, i}
@@ -190,5 +207,50 @@
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	img.logo_project{
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 50%;
+		z-index: 2;
+		flex-grow: 0;
+		border: 2px solid #808080;
+		transition: all 0.25s ease-in-out;
+	}
+	img.logo_project:hover {
+		transform: scale(1.1);
+	}
+	.project_container{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		align-items: flex-start;
+		padding-left: 0.5rem;
+	}
+	.sub_project{
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.p_tag {
+		font-size: .8rem;
+    min-width: 3rem;
+    max-width: 4rem;
+    margin: 0.2rem 0;
+    text-align: center;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+	}
+	
+	.p_tag:hover{
+		-webkit-line-clamp: unset; /* Display all lines on hover */
+  line-clamp: unset;
 	}
 </style>

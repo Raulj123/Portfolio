@@ -6,11 +6,16 @@ export const experience = [
 		href: 'https://www.zymoresearch.com/',
 		date: 'Jun 2023 - Aug 2023',
 		content: 'TBD',
-		badges: ['https://img.shields.io/badge/Django-black?logo=django',
-				'https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white',
-				'https://img.shields.io/badge/Python-blue?logo=python&logoColor=white',
-
-				]
+		badges: 
+		['https://img.shields.io/badge/Django-black?logo=django',
+			'https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white',
+			'https://img.shields.io/badge/Python-blue?logo=python&logoColor=white',
+			'https://img.shields.io/badge/Vue.js-green?logo=vue.js&logoColor=white',
+		],
+		project:{
+			name: 'Cross Reference Database',
+			
+		}
 	},
 	{
 		company: 'Code Ninjas',

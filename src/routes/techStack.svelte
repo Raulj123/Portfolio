@@ -46,7 +46,7 @@
 </section>
 
 <style>
-	img:hover {
+img:hover {
 		transform: scale(1.1);
 	}
 </style>

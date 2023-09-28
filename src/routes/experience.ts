@@ -2,7 +2,7 @@ export const experience = [
 	{
 		company: 'Zymo Research Corp',
 		title: 'Full Stack Web Developer Intern',
-		img: 'https://media.licdn.com/dms/image/C560BAQEzVCEClmqU8A/company-logo_200_200/0/1519888483761?e=1695254400&v=beta&t=0BqTCMsQCTiCHsWCKpH0WMUMTVgTApJzOd74W1kJzhk',
+		img: 'https://media.licdn.com/dms/image/C560BAQEzVCEClmqU8A/company-logo_200_200/0/1519888483761?e=1703721600&v=beta&t=XU06NKlhTBQ8FKs2tP61EjrxWCDaGVZE7qcdEa29Aas',
 		href: 'https://www.zymoresearch.com/',
 		date: 'Jun 2023 - Aug 2023',
 		content: 'I collaborated with a mentor to design a cross-reference search using Django and openpyxl, streamlined data imports with batch uploads, and developed an admin dashboard for efficient product management.',

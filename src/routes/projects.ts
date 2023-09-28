@@ -1,44 +1,53 @@
 export const projects = [
 	{
-		href: 'https://feelingshub.vercel.app/',
+		repo: 'https://github.com/Raulj123/FeelingsHub',
+		demo: 'https://feelingshub.vercel.app/',
 		image: './project_imgs/feelingsHub.png',
 		title: 'FeelingsHub',
 		badges: ['Svelte', 'TypeScript', 'ElephantSQL', 'Prisma'],
 		badgesPic: [
-			'./icons/svelte.png',
-			'./icons/typeScript.png',
-			'./icons/post.png',
-			'./icons/prisma.png'
+			'https://img.shields.io/badge/svelte-%23E34F26?&logo=svelte&logoColor=white',
+			'https://img.shields.io/badge/typeScript-%23007ACC?&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/postgres-%2314354C?&logo=postgresql&logoColor=white',
+			'https://img.shields.io/badge/prisma-%2320232A?&logo=prisma&logoColor=white',
 		],
 		content:
-			'Built and designed FeelingsHub, a web application using Svelte, Prisma, and ElephantSQL, where users can share their emotions. Created a user-friendly interface with full CRUD functionality for easy input, viewing, editing, and deletion of feelings.'
+			'🎭 Built FeelingsHub using Svelte, Prisma, and ElephantSQL. Allows users to share emotions with a user-friendly interface and full CRUD functionality.'
 	},
 	{
-		href: 'https://github.com/Raulj123/Notess',
+		repo: 'https://github.com/Raulj123/Notess',
 		image: './project_imgs/Notess.png',
 		title: 'Notess',
 		badges: ['PHP', 'MySQL'],
-		badgesPic: ['./icons/php.png', './icons/database.png'],
+		badgesPic: [
+			'https://img.shields.io/badge/php-%23777BB4?&logo=php&logoColor=white',
+			'https://img.shields.io/badge/mysql-%2300f?&logo=mysql&logoColor=white',
+		],
 		content:
-			'Notess is a web-based note-taking application that allows users to create accounts, log in securely, and save notes. The app is designed to provide a user-friendly platform for taking and storing notes. Users can retrieve and edit their notes at any time'
+			'Notes is a user-friendly web-based app made with PHP and MySQL for secure note-taking, account creation, and easy note retrieval and editing',
 	},
 	{
-		href: 'https://code-snippet-three.vercel.app/',
-		image: './project_imgs/CodeShare.png',
-		title: 'CodeShare',
-		badges: ['Svelte', 'TypeScript'],
-		badgesPic: ['./icons/svelte.png', './icons/typeScript.png'],
+		repo: 'https://github.com/Raulj123/Github_stalker',
+		demo: 'github-stalker-lovat.vercel.app/',
+		image: './project_imgs/github_stalk.png',
+		title: 'Github stalker',
+		badges: ['Svelte'],
+		badgesPic: [
+			'https://img.shields.io/badge/Svelte-%23FF3E00?&logo=svelte&logoColor=white',
+		],
 		content: [
-			'Code share is a web-based code snippet manager that simplifies the process of storing and organizing code snippets. Users can add a title, programming language, and code snippet, which are displayed in a easy-to-read format using the Skeleton UI framework. The application allows users to delete unwanted code snippets or mark important ones as favorites.'
+			'GitHub Stalker is a powerful tool that leverages the GitHub API to provide users with a comprehensive platform for discovering valuable insights about GitHub users',
 		]
 	},
 	{
-		href: 'https://github.com/Raulj123/c-vis',
+		repo: 'https://github.com/Raulj123/c-vis',
 		image: './project_imgs/vis.png',
 		title: 'Sorting Visualizer',
 		badges: ['C++'],
-		badgesPic: ['./icons/c++.png'],
+		badgesPic: [
+			'https://img.shields.io/badge/c++-%2300599C?&logo=c%2B%2B&logoColor=white',
+		],
 		content:
-			'Program that implements a visualization of various sorting algorithms. The user is prompted to select a sorting algorithm and the program generates a vector of 100 random integers. The chosen sorting algorithm is then applied to the vector, and at each step of the algorithm, the program visually displays the current state of the vector as a series of vertical lines on a window.'
+			'Sort Visualizer: Choose a sorting algorithm, and watch it in action as it sorts a random list of 100 integers, visualized as vertical lines.',
 	}
 ];

@@ -7,9 +7,7 @@
   import Experience from './experience.svelte'
   import Contact from './contact.svelte'
 
-	
-</script>
-
+ </script>
 <Nav/>
 <Hero/>
 <Projects/>

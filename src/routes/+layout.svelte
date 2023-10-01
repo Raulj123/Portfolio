@@ -13,6 +13,9 @@
 
 	<slot />
 	<footer class="text-center py-5  mx-auto m-5 ">Made with 💙 by Raul</footer>
+	<div>
+		<img src="./flag/mexico-flag.jpg" alt="mx-flag" class="w-[100%]" />
+	</div>
 </AppShell>
 
 

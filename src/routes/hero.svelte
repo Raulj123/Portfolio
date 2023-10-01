@@ -1,6 +1,6 @@
 
 <section id="about" class="md:block hidden">
-	<h1 class="text-center p-40" style=" font-weight: bold;">Hey, I'am Raul</h1>
+	<h1 class="text-center p-40" style=" font-weight: bold;">Hey, I'm Raul</h1>
 
 	<img
 		class="floating text-center u-max-full-width centered-img h-40 w-25"

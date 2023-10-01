@@ -84,9 +84,9 @@
 	<svelte:fragment slot="trail">
 		<div class="md:hidden">
 			<div class="menu-icon" on:click={openMenu} on:keydown={handleKeyPress}>
-				<div class="bar1" />
-				<div class="bar2" />
-				<div class="bar3" />
+				<div class:open={isMenuOpen} id="bar1" />
+				<div class:open={isMenuOpen} id="bar2" />
+				<div class:open={isMenuOpen} id="bar3" />
 			</div>
 		</div>
 	</svelte:fragment>
@@ -115,7 +115,6 @@
 		display: block;
 		position: fixed;
 		border-radius: 0;
-		right: 0;
 		z-index: 100;
 		width: 100%;
 	}
@@ -132,23 +131,29 @@
 		margin-bottom: 4vh;
 		list-style: none;
 	}
-	.bar1,
-	.bar2,
-	.bar3 {
+	#bar1 {
 		width: 30px;
 		height: 3px;
-		background-color: #0d843d;
+		background-color: white;
 		margin: 6px 0;
 		transition: 0.4s;
 	}
-	.change .bar1 {
-		transform: translate(0, 11px) rotate(-45deg);
+	#bar2 {
+		width: 30px;
+		height: 3px;
+		background-color: pink;
+		margin: 6px 0;
+		transition: 0.4s;
 	}
-	.change .bar2 {
-		opacity: 0;
+	#bar3 {
+		width: 30px;
+		height: 3px;
+		background-color: white;
+		margin: 6px 0;
+		transition: 0.4s;
 	}
-	.change .bar3 {
-		transform: translate(0, -11px) rotate(45deg);
+	.menu-icon .open {
+		transform: translate(0, 10px) rotate(-360deg);
 	}
 
 	.dropdown-container {

@@ -24,13 +24,13 @@ export const projects = [
 			'https://img.shields.io/badge/mysql-%2300f?&logo=mysql&logoColor=white',
 		],
 		content:
-			'Notes is a user-friendly web-based app made with PHP and MySQL for secure note-taking, account creation, and easy note retrieval and editing',
+			'Notess is a user-friendly web-based app made with PHP and MySQL for secure note-taking, account creation, and easy note retrieval and editing',
 	},
 	{
 		repo: 'https://github.com/Raulj123/Github_stalker',
-		demo: 'github-stalker-lovat.vercel.app/',
+		demo: 'https://github-stalker-lovat.vercel.app/',
 		image: './project_imgs/github_stalk.png',
-		title: 'Github stalker',
+		title: 'GitHub Stalker',
 		badges: ['Svelte'],
 		badgesPic: [
 			'https://img.shields.io/badge/Svelte-%23FF3E00?&logo=svelte&logoColor=white',

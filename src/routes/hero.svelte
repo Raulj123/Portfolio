@@ -36,7 +36,7 @@
 	</h3>
 
 	<div class=" text-center [&>.logo-item]:!bg-transparent flex justify-center">
-		<a class="logo-item" style="" href="./master_resume.pdf" target="_blank">
+		<a class="logo-item" href="./master_resume.pdf" target="_blank" style="color: var(--color-surface-500);">
 			<i class="fa-solid fa-file text-l" />
 			<span class="gradient-heading" style="font-size:1.1rem;">My Resume</span>
 		</a>
@@ -81,5 +81,15 @@
 			opacity: 0;
 			border-radius: 50%;
 		}
+	}
+	#about {
+		background-image: url("https://cdn.pixabay.com/photo/2014/10/22/17/39/pumpkin-498342_1280.png");
+		border-color: var(--color-surface-500);
+		/* border-width: 1px; */
+		background-size: cover;
+		background-position: center;
+	}
+	a {
+		color: var(--color-surface-500);
 	}
 </style>

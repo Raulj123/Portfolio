@@ -10,53 +10,53 @@
 		return colors[randomIndex];
 	}
 	let aggregatedData: { [key: string]: any } = {};
-	onMount(async () => {
-		try {
-			const url = `https://api.github.com/users/Raulj123/repos`;
-			const result = await fetch(url);
-			const repo_data = (await result.json()) as any[];
-			let repo_counter = 0;
-			repo_data.forEach((repo) => {
-				if (repo_counter >= 6) {
-					return;
-				}
-				const currentDate = new Date();
-				const createdDate = new Date(repo.created_at);
-				const updatedDate = new Date(repo.updated_at);
-				const month_create = createdDate.toLocaleString('en-US', { month: 'short' });
-				const year_create = createdDate.getUTCFullYear();
+	// onMount(async () => {
+	// 	try {
+	// 		const url = `https://api.github.com/users/Raulj123/repos`;
+	// 		const result = await fetch(url);
+	// 		const repo_data = (await result.json()) as any[];
+	// 		let repo_counter = 0;
+	// 		repo_data.forEach((repo) => {
+	// 			if (repo_counter >= 6) {
+	// 				return;
+	// 			}
+	// 			const currentDate = new Date();
+	// 			const createdDate = new Date(repo.created_at);
+	// 			const updatedDate = new Date(repo.updated_at);
+	// 			const month_create = createdDate.toLocaleString('en-US', { month: 'short' });
+	// 			const year_create = createdDate.getUTCFullYear();
 
-				const timeDiff = currentDate.getTime() - updatedDate.getTime();
-				const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-				let formattedUpdateDate: any;
+	// 			const timeDiff = currentDate.getTime() - updatedDate.getTime();
+	// 			const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+	// 			let formattedUpdateDate: any;
 
-				if (daysDiff <= 1) {
-					formattedUpdateDate = 'Updated today';
-				} else if (daysDiff <= 30) {
-					formattedUpdateDate = `Updated ${daysDiff} day${daysDiff > 1 ? 's' : ''} ago`;
-				} else {
-					const monthsDiff = Math.floor(daysDiff / 30);
-					formattedUpdateDate = `Updated ${monthsDiff} month${monthsDiff > 1 ? 's' : ''} ago`;
-				}
+	// 			if (daysDiff <= 1) {
+	// 				formattedUpdateDate = 'Updated today';
+	// 			} else if (daysDiff <= 30) {
+	// 				formattedUpdateDate = `Updated ${daysDiff} day${daysDiff > 1 ? 's' : ''} ago`;
+	// 			} else {
+	// 				const monthsDiff = Math.floor(daysDiff / 30);
+	// 				formattedUpdateDate = `Updated ${monthsDiff} month${monthsDiff > 1 ? 's' : ''} ago`;
+	// 			}
 
-				const formattedCreatedDate = `Created ${month_create}, ${year_create}`;
+	// 			const formattedCreatedDate = `Created ${month_create}, ${year_create}`;
 
-				aggregatedData[repo.name] = {
-					description: repo.description || null,
-					languages: repo.language || null,
-					created: formattedCreatedDate,
-					updated: formattedUpdateDate,
-					href: repo.html_url || null,
-					demo: repo.homepage || null,
-					stars: repo.stargazers_count || null,
-					forks: repo.forks || null
-				};
-				repo_counter++;
-			});
-		} catch (error) {
-			console.log(error);
-		}
-	});
+	// 			aggregatedData[repo.name] = {
+	// 				description: repo.description || null,
+	// 				languages: repo.language || null,
+	// 				created: formattedCreatedDate,
+	// 				updated: formattedUpdateDate,
+	// 				href: repo.html_url || null,
+	// 				demo: repo.homepage || null,
+	// 				stars: repo.stargazers_count || null,
+	// 				forks: repo.forks || null
+	// 			};
+	// 			repo_counter++;
+	// 		});
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 	}
+	// });
 </script>
 
 <svelte:window bind:innerWidth />

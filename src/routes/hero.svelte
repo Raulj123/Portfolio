@@ -1,6 +1,15 @@
+<script lang="ts">
+  const currentDate = new Date();
+  const currentMonth = currentDate.getMonth();
+  const months = [
+    '🌟', '❄️', '🌼', '🌸', '🌞', '☀️', '🎇', '🌞', '🍂', '🎃', '🦃', '🎄'
+  ];
+  const month = months[currentMonth];
+  console.log("month", month);
+</script>
 
 <section id="about" class="md:block hidden">
-	<h1 class="text-center p-40" style=" font-weight: bold;">Hey, I'm Raul</h1>
+	<h1 class="text-center p-40" style=" font-weight: bold;">Hey, I'm Raul {month}</h1>
 
 	<img
 		class="floating text-center u-max-full-width centered-img h-40 w-25"
@@ -23,7 +32,7 @@
 
 <section id="about" class="md:hidden">
 	<h1 class="p-20 justify-center flex" style=" font-weight: bold; font-size: 1.8rem;">
-		Hey, I'am Raul
+		Hey, I'am Raul {month}
 	</h1>
 	<img
 		class="floating text-center centered-img h-28 w-23"
@@ -83,7 +92,6 @@
 		}
 	}
 	#about {
-		background-image: url("https://cdn.pixabay.com/photo/2014/10/22/17/39/pumpkin-498342_1280.png");
 		border-color: var(--color-surface-500);
 		/* border-width: 1px; */
 		background-size: cover;

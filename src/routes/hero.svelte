@@ -31,7 +31,7 @@
 </section>
 
 <section id="about" class="md:hidden">
-	<h1 class="p-20 justify-center flex" style=" font-weight: bold; font-size: 1.8rem;">
+	<h1 class="p-20 text-center" style=" font-weight: bold; font-size: 1.5rem;">
 		Hey, I'am Raul {month}
 	</h1>
 	<img

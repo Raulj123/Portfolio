@@ -62,8 +62,8 @@
 </script>
 
 <Modal />
-<div>
-	<img src="./flag/mexico-flag.jpg" alt="mx-flag" class="w-[100%]" />
+<div class="top-strip">
+	<!-- <img src="./flag/mexico-flag.jpg" alt="mx-flag" class="w-[100%]" /> -->
 </div>
 <AppBar class="mt-1">
 	<svelte:fragment slot="lead"><LightSwitch /></svelte:fragment>
@@ -113,10 +113,11 @@
 <style>
 	nav.open {
 		display: block;
-		position: fixed;
+		position: fixed !important;
 		border-radius: 0;
 		z-index: 100;
 		width: 100%;
+		overflow: hidden;
 	}
 	nav {
 		display: none;
@@ -158,7 +159,7 @@
 
 	.dropdown-container {
 		margin-top: 10px;
-		position: absolute;
+		position: relative;
 		right: 2rem;
 		top: 60px;
 		width: 300px;
@@ -180,5 +181,20 @@
 		nav.open {
 			display: none;
 		}
+	}
+	.top-strip {
+		background-image: linear-gradient(
+			102.02deg,
+			#006341 0%,
+			#006341 33.33%,
+			#ffffff 33.33%,
+			#ffffff 66.67%,
+			#c8102e 66.67%,
+			#c8102e 100%
+		);
+		background-repeat: no-repeat;
+		background-repeat: no-repeat;
+		display: flex;
+		height: 0.5rem;
 	}
 </style>

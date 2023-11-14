@@ -8,9 +8,13 @@
     };
     toastStore.trigger(t)
   }
+	let innerWidth = 0;
+	$: mobile = innerWidth < 770;
+	
 </script>
 
-
+<svelte:window bind:innerWidth />
+{#if !mobile}
 <hr>
   <section id="contact" class="md:block hidden">
 	<h1 class="text-center pt-20" style=" font-weight: bold;">Contact Me</h1>
@@ -39,7 +43,8 @@
 
 	</div>
 </section>
-
+{:else}
+  <hr>
 <section id="contact" class="md:hidden">
 	<h1 class="text-center pt-20" style=" font-weight: bold;">Contact Me</h1>
 
@@ -68,7 +73,7 @@
       </p>
 	</div>
 </section>
-
+{/if}
 
 <style>
   a:hover{
